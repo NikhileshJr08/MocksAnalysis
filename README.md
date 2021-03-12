@@ -29,6 +29,12 @@ pip install -r requirements.txt
 python main.py
 ```
 
+## Graphs
+* Average Score Given by Each HR on 20/02/2021.
+* Average Score Given by Each HR on 21/02/2021.
+* Number of Students Interviewed by Each HR - 20/02/2021
+* Number of Students Interviewer by Each HR - 21/02/2021
+
 ## Requirements
 * Python 3.7 (Download from [here](https://www.python.org/downloads/release/python-376/))
 * virtualenv (Install it using `pip install virtualenv`)
@@ -52,7 +58,7 @@ git fetch upstream
 git merge upstream/master
 ```
 
-* After you have completed the task assigned to you, commit your changes to your local repo and open a pull request for the same.
+* After you have completed the task assigned to you, commit your changes to your local repo and open a pull request for the same. You should be making changes only to one file, that is `main.py`.
 ```
 # Make sure your remotes are set correctly
 git remote -v
@@ -60,6 +66,9 @@ git remote -v
 Output:-
 origin   - https://github.com/<YOUR_GITHUB_USERNAME>/MocksAnalysis 
 upstream - https://github.com/ForeseTech/MocksAnalysis
+
+# If you have installed any other dependencies other than the ones already present,
+pip freeze > requirements.txt
 
 # Add your files to the staging area
 git add <file_name>
