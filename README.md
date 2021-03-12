@@ -15,13 +15,27 @@ git clone https://github.com/<YOUR_GITHUB_USERNAME>/MocksAnalysis
 
 # Navigate to the cloned repository
 cd MocksAnalysis/
+```
 
+Windows Setup
+```
 # Setup Python virtual environment
 python -m venv env
 
-# Activate the virtual environment (Windows)
+# Activate the virtual environment
 source env/Scripts/activate
+```
 
+Linux/MacOS Setup
+```
+# Setup Python virtual environment
+virtualenv env
+
+# Activate the virtual environment
+source env/bin/activate
+```
+ 
+```
 # Install all dependencies
 pip install -r requirements.txt
 
