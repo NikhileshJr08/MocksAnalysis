@@ -43,6 +43,12 @@ pip install -r requirements.txt
 python main.py
 ```
 
+```
+“UserWarning: Matplotlib is currently using agg, which is a non-GUI backend, so cannot show the figure.” when plotting figure with pyplot on Pycharm
+If you see the above error on Linux or MacOS, run the following command,
+sudo apt-get install python3-tk (Do not install it with pip or directly in the virtual environment)
+```
+
 ## Graphs
 * Average Score Given by Each HR on 20/02/2021.
 * Average Score Given by Each HR on 21/02/2021.
