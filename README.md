@@ -60,12 +60,12 @@ sudo apt-get install python3-tk (Do not install it with pip or directly in the v
 | -------------------------------------------------------- | ---------------------------------------------------------------- |
 | <img src="graphs/average_aptitude_score_department.png"> | <img src="graphs/average_group_discussion_score_department.png"> |
 
-| __Average Interview Score By Department__                 | __Average Number Of Interviews Attended By Department__      |
-| --------------------------------------------------------- | ------------------------------------------------------------ |     
-| <img src="graphs/average_interview_score_department.png"> | <img src="graphs/average_interview_attended_department.png"> |
+| __Average Interview Score By Department__                 | __Average Number Of Interviews Attended By A Student By Department__      |
+| --------------------------------------------------------- | ------------------------------------------------------------------------- |     
+| <img src="graphs/average_interview_score_department.png"> | <img src="graphs/average_interview_attended_department.png">              |
 
 ## Requirements
-* Git (Download from [here])(https://git-scm.com/downloads)
+* Git (Download from [here](https://git-scm.com/downloads))
 * Python 3.7 (Download from [here](https://www.python.org/downloads/release/python-376/))
 * virtualenv (Install it using `pip install virtualenv`)
 
