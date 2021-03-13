@@ -16,26 +16,50 @@ mocks_df["interviewer_company"] = mocks_df["interviewer_company"].astype("catego
 
 # Convert interview_date to date datatype
 mocks_df["interview_date"] = pd.to_datetime(mocks_df["interview_date"])
-
+"""
 # Get Series for the average interview score in each department
 average_interview_score_department = mocks_df.groupby(["student_department"])["interview_total"].mean().sort_values(ascending=True)
 departments = average_interview_score_department.index
 average_interview_score = average_interview_score_department.values
 
+
 sns.set_style(style="darkgrid")
 plots = sns.barplot(x=departments, y=average_interview_score)
 
 # Annotate the bar graphs
-for bar in plots.patches: 
-    
+for bar in plots.patches:
+
     plots.annotate(
-                   format(bar.get_height(), '.2f'),  (bar.get_x() + bar.get_width() / 2,  
-                   bar.get_height()), ha='center', va='center', size=15, xytext=(0, 8), 
+                   format(bar.get_height(), '.2f'),  (bar.get_x() + bar.get_width() / 2,
+                   bar.get_height()), ha='center', va='center', size=15, xytext=(0, 8),
                    textcoords='offset points'
-                  ) 
+                  )
 
 plt.yticks(np.arange(5, 35, 5))
 plt.xlabel("Department")
 plt.ylabel("Interview Score Out Of 30")
 plt.title("AVERAGE INTERVIEW SCORE - DEPARTMENT WISE (ONLINE MOCK PLACEMENTS)")
+plt.show()
+"""
+
+average_interview_score_department = mocks_df.groupby(["student_department"])['interview_total'].mean().sort_values(ascending=True)
+departments_20 = average_interview_score_department.index
+average_interview_score_20 = average_interview_score_department.values
+
+sns.set_style(style="darkgrid")
+plots = sns.barplot(x=departments_20, y=average_interview_score_20)
+
+# Annotate the bar graphs
+for bar in plots.patches:
+
+    plots.annotate(
+                   format(bar.get_height(), '.2f'),  (bar.get_x() + bar.get_width() / 2,
+                   bar.get_height()), ha='center', va='center', size=15, xytext=(0, 8),
+                   textcoords='offset points'
+                  )
+
+plt.yticks(np.arange(5, 35, 5))
+plt.xlabel("Department")
+plt.ylabel("Interview Score Out Of 30")
+plt.title("AVERAGE INTERVIEW SCORE - DEPARTMENT WISE (20-02-2021)")
 plt.show()
