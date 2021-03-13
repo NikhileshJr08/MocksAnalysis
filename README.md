@@ -15,18 +15,38 @@ git clone https://github.com/<YOUR_GITHUB_USERNAME>/MocksAnalysis
 
 # Navigate to the cloned repository
 cd MocksAnalysis/
+```
 
+Windows Setup
+```
 # Setup Python virtual environment
 python -m venv env
 
-# Activate the virtual environment (Windows)
+# Activate the virtual environment
 source env/Scripts/activate
+```
 
+Linux/MacOS Setup
+```
+# Setup Python virtual environment
+virtualenv env
+
+# Activate the virtual environment
+source env/bin/activate
+```
+ 
+```
 # Install all dependencies
 pip install -r requirements.txt
 
 # Run the Script
 python main.py
+```
+
+```
+“UserWarning: Matplotlib is currently using agg, which is a non-GUI backend, so cannot show the figure.” when plotting figure with pyplot on Pycharm
+If you see the above error on Linux or MacOS, run the following command,
+sudo apt-get install python3-tk (Do not install it with pip or directly in the virtual environment)
 ```
 
 ## Graphs
