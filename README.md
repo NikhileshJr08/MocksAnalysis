@@ -56,6 +56,10 @@ sudo apt-get install python3-tk (Do not install it with pip or directly in the v
 * Number of Students Interviewer by Each HR - 21/02/2021
 
 ## Visualizations
+| __Number Of Students Who Participated in MOCK PLACEMENTS 2021__ | __Mode Preference Of Students By Department__               |
+| --------------------------------------------------------------- | ----------------------------------------------------------- |
+| <img src="graphs/count_students_department.png">                | <img src="graphs/count_students_preference_department.png"> |
+
 | __Average Aptitude Score By Department__                 | __Average Group Discussion Score By Department__                 |
 | -------------------------------------------------------- | ---------------------------------------------------------------- |
 | <img src="graphs/average_aptitude_score_department.png"> | <img src="graphs/average_group_discussion_score_department.png"> |
