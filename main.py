@@ -24,14 +24,14 @@ average_aptitude_score_department = aptitude_test_df.groupby(["department"])["to
 departments = average_aptitude_score_department.index
 average_aptitude_scores = average_aptitude_score_department.values
 
-# Create barplot 
+# Create barplot
 plots = sns.barplot(x=departments, y=average_aptitude_scores, color="salmon")
 
 # Annotate the bar graphs
-for bar in plots.patches: 
-    plots.annotate(format(bar.get_height(), '.2f'),  (bar.get_x() + bar.get_width() / 2,  
-                   bar.get_height()), ha='center', va='center', size=15, xytext=(0, 8), 
-                   textcoords='offset points') 
+for bar in plots.patches:
+    plots.annotate(format(bar.get_height(), '.2f'),  (bar.get_x() + bar.get_width() / 2,
+                   bar.get_height()), ha='center', va='center', size=15, xytext=(0, 8),
+                   textcoords='offset points')
 
 # Set values to be displayed on y-axis
 plt.yticks(np.arange(5, 55, 5))
@@ -50,14 +50,14 @@ average_gd_score_department = group_discussion_df.groupby(["department"])["total
 departments = average_gd_score_department.index
 average_gd_scores = average_gd_score_department.values
 
-# Create barplot 
+# Create barplot
 plots = sns.barplot(x=departments, y=average_gd_scores)
 
 # Annotate the bar graphs
-for bar in plots.patches: 
-    plots.annotate(format(bar.get_height(), '.2f'),  (bar.get_x() + bar.get_width() / 2,  
-                   bar.get_height()), ha='center', va='center', size=15, xytext=(0, 8), 
-                   textcoords='offset points') 
+for bar in plots.patches:
+    plots.annotate(format(bar.get_height(), '.2f'),  (bar.get_x() + bar.get_width() / 2,
+                   bar.get_height()), ha='center', va='center', size=15, xytext=(0, 8),
+                   textcoords='offset points')
 
 # Set values to be displayed on y-axis
 plt.yticks(np.arange(5, 35, 5))
@@ -106,15 +106,15 @@ for bar in plots.patches:
                    bar.get_height()), ha='center', va='center', size=15, xytext=(0, 8),
                    textcoords='offset points'
                   )
-=======
-# Create barplot 
+
+# Create barplot
 plots = sns.barplot(x=departments, y=average_interview_scores)
 
 # Annotate the bar graphs
-for bar in plots.patches: 
-    plots.annotate(format(bar.get_height(), '.2f'),  (bar.get_x() + bar.get_width() / 2,  
-                   bar.get_height()), ha='center', va='center', size=15, xytext=(0, 8), 
-                   textcoords='offset points') 
+for bar in plots.patches:
+    plots.annotate(format(bar.get_height(), '.2f'),  (bar.get_x() + bar.get_width() / 2,
+                   bar.get_height()), ha='center', va='center', size=15, xytext=(0, 8),
+                   textcoords='offset points')
 
 # Set values to be displayed on y-axis
 plt.yticks(np.arange(5, 35, 5))
@@ -182,7 +182,7 @@ plt.yticks(np.arange(5, 35, 5))
 plt.xlabel("Department")
 plt.ylabel("Interview Score Out Of 30")
 plt.title("AVERAGE INTERVIEW SCORE - DEPARTMENT WISE (ONLINE MOCK PLACEMENTS - 21/02/2021)")
-=======
+
 # Series for the number of interviews attended by each department
 interviews_per_department = mocks_df.groupby(["student_department"])["registration_number"].count()
 # Series for the number of students from the department who participated in online MOCK PLACEMENTS
@@ -193,14 +193,14 @@ average_interview_department = interviews_per_department.divide(students_per_dep
 departments = average_interview_department.index
 average_interview_student = average_interview_department.values
 
-# Create barplot 
+# Create barplot
 plots = sns.barplot(x=departments, y=average_interview_student)
 
 # Annotate the bar graphs
-for bar in plots.patches: 
-    plots.annotate(format(bar.get_height(), '.2f'),  (bar.get_x() + bar.get_width() / 2,  
-                   bar.get_height()), ha='center', va='center', size=15, xytext=(0, 8), 
-                   textcoords='offset points') 
+for bar in plots.patches:
+    plots.annotate(format(bar.get_height(), '.2f'),  (bar.get_x() + bar.get_width() / 2,
+                   bar.get_height()), ha='center', va='center', size=15, xytext=(0, 8),
+                   textcoords='offset points')
 
 # Set values to be displayed on y-axis
 plt.yticks(np.arange(0.0, 2.75, 0.25))
